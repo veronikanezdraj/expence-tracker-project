@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Pressable } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import { GlobalStyles } from "../../constants/styles";
 
 function ExpensesSummary({ expenses, periodName }) {
@@ -13,6 +13,7 @@ function ExpensesSummary({ expenses, periodName }) {
   );
 }
 export default ExpensesSummary;
+
 const styles = StyleSheet.create({
   container: {
     padding: 8,

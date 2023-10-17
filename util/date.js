@@ -1,6 +1,7 @@
-//to do use moment lib
-
 export function getFormattedDate(date) {
   return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
-  //   return moment(date).format("MM/DD/YYYY");
+}
+
+export function getDateMinusDays(date, days) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() - days);
 }
